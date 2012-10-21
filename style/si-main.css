@@ -1,0 +1,222 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0; font-size: 100%; font: inherit; margin: 0; padding: 0; vertical-align: baseline;
+}
+body { line-height: 1}
+ol, ul { list-style: none; }
+/* Page styles
+----------------------------------------------- */
+html, body, #scene { font-family: sans-serif; height: 100%; width: 100%; }
+html { background-color: #666; }
+body { background-color: #000; }
+#scene { position: relative; }
+#invaders {
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 420px;
+}
+.invader {
+	display: inline-block;
+	height: 32px;
+	margin: 10px;
+	position: relative;
+	width: 50px;
+}
+.inv-el {
+	background-color: #fff;
+	display: block;
+	height: 4px;
+	margin: 0 auto;
+}
+.inv-helper {
+	background-color: #000;
+	display: block;
+	height: 4px;
+	position: absolute;
+}
+/* type 1 - 1st row */
+.type1 .inv-el1 { width: 10px; }
+.type1 .inv-el2 { width: 20px; }
+.type1 .inv-el3 { width: 30px; }
+.type1 .inv-el4 { width: 40px; }
+.type1 .inv-el5 { width: 40px; }
+.type1 .inv-el6 { width: 30px; }
+.type1 .inv-el7 { width: 40px; }
+.type1 .inv-helper1 {
+	left: 50%;
+	margin-left: -15px;
+	top: 24px;
+	width: 30px;
+}
+.type1 .inv-helper2 {
+	left: 50%;
+	margin-left: -10px;
+	top: 28px;
+	width: 20px;
+}
+.type1 .inv-helper3 {
+	left: 0;
+	top: 28px;
+	width: 10px;
+}
+.type1 .inv-helper4 {
+	right: 0;
+	top: 28px;
+	width: 10px;
+}
+.type1 .inv-helper3 {
+	left: 0;
+	top: 28px;
+	width: 10px;
+}
+.type1 .inv-helper4 {
+	right: 0;
+	top: 28px;
+	width: 10px;
+}
+.type1 .inv-helper5,
+.type1 .inv-helper7 {
+	left: 15px;
+	top: 12px;
+	width: 5px;
+}
+.type1 .inv-helper6,
+.type1 .inv-helper8 {
+	right: 15px;
+	top: 12px;
+	width: 5px;
+}
+.type1 .inv-helper7,
+.type1 .inv-helper8 {
+	top: 20px;
+}
+
+/* type 2 - 2nd row */
+.type2 .inv-el1 { margin-top: 8px; width: 30px; }
+.type2 .inv-el2,
+.type2 .inv-el3,
+.type2 .inv-el4 { width: 40px; }
+.type2 .inv-helper {
+	background-color: #fff;
+	top: 0px;
+	width: 5px;
+}
+.type2 .inv-helper1,
+.type2 .inv-helper5 {
+	left: 10px;
+}
+.type2 .inv-helper2,
+.type2 .inv-helper6 {
+	right: 10px;
+}
+.type2 .inv-helper3,
+.type2 .inv-helper4 {
+	top: 4px;
+}
+.type2 .inv-helper3 {
+	left: 15px;
+}
+.type2 .inv-helper4 {
+	right: 15px;
+}
+.type2 .inv-helper5,
+.type2 .inv-helper6 {
+	top: 24px;
+}
+.type2 .inv-helper7,
+.type2 .inv-helper8 {
+	top: 28px;
+}
+.type2 .inv-helper7 {
+	left: 5px;
+}
+.type2 .inv-helper8 {
+	right: 5px;
+}
+.type2 .inv-helper9,
+.type2 .inv-helper10 {
+	height: 16px;
+	top: 4px;
+}
+.type2 .inv-helper9 {
+	left: 0;
+}
+.type2 .inv-helper10 {
+	right: 0;
+}
+.type2 .inv-helper11,
+.type2 .inv-helper12 {
+	background-color: #000;
+	top: 12px;
+}
+.type2 .inv-helper11 {
+	left: 15px;
+}
+.type2 .inv-helper12 {
+	right: 15px;
+}
+/* type 3 - 3rd row */
+.type3 .inv-el1 {
+	width: 20px;
+}
+.type3 .inv-el2 {
+	width: 40px;
+}
+.type3 .inv-el3 {
+	height: 12px;
+	width: 50px;
+}
+.type3 .inv-el4 {
+	width: 30px;
+}
+.type3 .inv-el5 {
+	width: 40px;
+}
+.type3 .inv-el6 {
+	width: 50px;
+}
+.type3 .inv-helper {
+	background-color: #000;
+}
+.type3 .inv-helper1 {
+	left: 20px;
+	top: 20px;
+	width: 10px;
+}
+.type3 .inv-helper2,
+.type3 .inv-helper3 {
+	top: 24px;
+	width: 5px;
+}
+.type3 .inv-helper2 {
+	left: 15px;
+}
+.type3 .inv-helper3 {
+	right: 15px;
+}
+.type3 .inv-helper4 {
+	left: 5px;
+	top: 28px;
+	width: 40px;
+}
+.type3 .inv-helper5,
+.type3 .inv-helper6 {
+	top: 12px;
+	width: 10px;
+}
+.type3 .inv-helper5 {
+	left: 10px;
+}
+.type3 .inv-helper6 {
+	right: 10px;
+}
+
+/* Aides
+----------------------------------------------- */
+.hidden { display: none !important; visibility: hidden; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
