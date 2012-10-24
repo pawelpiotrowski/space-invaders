@@ -16,7 +16,7 @@ body { background-color: #000; }
 #invaders {
 	margin: 0 auto;
 	padding-top: 20px;
-	width: 420px;
+	width: 70%;
 }
 .invader {
 	display: inline-block;
@@ -26,10 +26,8 @@ body { background-color: #000; }
 	width: 50px;
 }
 .inv-el {
-	background-color: #fff;
 	display: block;
 	height: 4px;
-	margin: 0 auto;
 }
 .inv-helper {
 	background-color: #000;
@@ -38,182 +36,119 @@ body { background-color: #000; }
 	position: absolute;
 }
 /* type 1 - 1st row */
-.type1 .inv-el1 { width: 10px; }
-.type1 .inv-el2 { width: 20px; }
-.type1 .inv-el3 { width: 30px; }
-.type1 .inv-el4 { width: 40px; }
-.type1 .inv-el5 { width: 40px; }
-.type1 .inv-el6 { width: 30px; }
-.type1 .inv-el7 { width: 40px; }
-.type1 .inv-helper1 {
-	left: 50%;
-	margin-left: -15px;
-	top: 24px;
-	width: 30px;
+.type1 .inv-el1 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
 }
-.type1 .inv-helper2 {
-	left: 50%;
-	margin-left: -10px;
-	top: 28px;
-	width: 20px;
+.type1 .inv-el2 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 30%, #ffffff 30%, #ffffff 70%, #000000 70%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
 }
-.type1 .inv-helper3 {
-	left: 0;
-	top: 28px;
-	width: 10px;
+.type1 .inv-el3 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 20%, #ffffff 20%, #ffffff 80%, #000000 80%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(20%,#000000), color-stop(20%,#ffffff), color-stop(80%,#ffffff), color-stop(80%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
 }
-.type1 .inv-helper4 {
-	right: 0;
-	top: 28px;
-	width: 10px;
+.type1 .inv-el4 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 30%, #000000 30%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 70%, #ffffff 70%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(30%,#ffffff), color-stop(30%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(70%,#000000), color-stop(70%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
 }
-.type1 .inv-helper3 {
-	left: 0;
-	top: 28px;
-	width: 10px;
+.type1 .inv-el5 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
 }
-.type1 .inv-helper4 {
-	right: 0;
-	top: 28px;
-	width: 10px;
+.type1 .inv-el6 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 30%, #ffffff 30%, #ffffff 40%, #000000 40%, #000000 60%, #ffffff 60%, #ffffff 70%, #000000 70%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(40%,#ffffff), color-stop(40%,#000000), color-stop(60%,#000000), color-stop(60%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
 }
-.type1 .inv-helper5,
-.type1 .inv-helper7 {
-	left: 15px;
-	top: 12px;
-	width: 5px;
+.type1 .inv-el7 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 20%, #ffffff 20%, #ffffff 30%, #000000 30%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 70%, #ffffff 70%, #ffffff 80%, #000000 80%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(20%,#000000), color-stop(20%,#ffffff), color-stop(30%,#ffffff), color-stop(30%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(70%,#000000), color-stop(70%,#ffffff), color-stop(80%,#ffffff), color-stop(80%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
 }
-.type1 .inv-helper6,
-.type1 .inv-helper8 {
-	right: 15px;
-	top: 12px;
-	width: 5px;
+.type1 .inv-el8 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 20%, #000000 20%, #000000 30%, #ffffff 30%, #ffffff 40%, #000000 40%, #000000 60%, #ffffff 60%, #ffffff 70%, #000000 70%, #000000 80%, #ffffff 80%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(20%,#ffffff), color-stop(20%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(40%,#ffffff), color-stop(40%,#000000), color-stop(60%,#000000), color-stop(60%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(80%,#000000), color-stop(80%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
 }
-.type1 .inv-helper7,
-.type1 .inv-helper8 {
-	top: 20px;
+.type2 .inv-el1 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 30%, #ffffff 30%, #ffffff 70%, #000000 70%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
 }
-
-/* type 2 - 2nd row */
-.type2 .inv-el1 { margin-top: 8px; width: 30px; }
-.type2 .inv-el2,
-.type2 .inv-el3,
-.type2 .inv-el4 { width: 40px; }
-.type2 .inv-helper {
-	background-color: #fff;
-	top: 0px;
-	width: 5px;
+.type2 .inv-el2 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
 }
-.type2 .inv-helper1,
-.type2 .inv-helper5 {
-	left: 10px;
+.type2 .inv-el3, .type2 .inv-el5 { background: #fff; }
+.type2 .inv-el4 {
+	background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 20%, #000000 20%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 80%, #ffffff 80%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(20%,#ffffff), color-stop(20%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(80%,#000000), color-stop(80%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: linear-gradient(to right,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
 }
-.type2 .inv-helper2,
-.type2 .inv-helper6 {
-	right: 10px;
+.type2 .inv-el6 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 20%, #ffffff 20%, #ffffff 40%, #000000 40%, #000000 60%, #ffffff 60%, #ffffff 80%, #000000 80%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(20%,#000000), color-stop(20%,#ffffff), color-stop(40%,#ffffff), color-stop(40%,#000000), color-stop(60%,#000000), color-stop(60%,#ffffff), color-stop(80%,#ffffff), color-stop(80%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
 }
-.type2 .inv-helper3,
-.type2 .inv-helper4 {
-	top: 4px;
+.type2 .inv-el7 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 30%, #000000 30%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 70%, #ffffff 70%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(30%,#ffffff), color-stop(30%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(70%,#000000), color-stop(70%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
 }
-.type2 .inv-helper3 {
-	left: 15px;
+.type2 .inv-el8 {
+	background: -moz-linear-gradient(left,  #ffffff 1%, #ffffff 20%, #000000 20%, #000000 80%, #ffffff 80%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#ffffff), color-stop(20%,#ffffff), color-stop(20%,#000000), color-stop(80%,#000000), color-stop(80%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -o-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -ms-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: linear-gradient(to right,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
 }
-.type2 .inv-helper4 {
-	right: 15px;
-}
-.type2 .inv-helper5,
-.type2 .inv-helper6 {
-	top: 24px;
-}
-.type2 .inv-helper7,
-.type2 .inv-helper8 {
-	top: 28px;
-}
-.type2 .inv-helper7 {
-	left: 5px;
-}
-.type2 .inv-helper8 {
-	right: 5px;
-}
-.type2 .inv-helper9,
-.type2 .inv-helper10 {
-	height: 16px;
-	top: 4px;
-}
-.type2 .inv-helper9 {
-	left: 0;
-}
-.type2 .inv-helper10 {
-	right: 0;
-}
-.type2 .inv-helper11,
-.type2 .inv-helper12 {
-	background-color: #000;
-	top: 12px;
-}
-.type2 .inv-helper11 {
-	left: 15px;
-}
-.type2 .inv-helper12 {
-	right: 15px;
-}
-/* type 3 - 3rd row */
-.type3 .inv-el1 {
-	width: 20px;
-}
-.type3 .inv-el2 {
-	width: 40px;
-}
-.type3 .inv-el3 {
-	height: 12px;
-	width: 50px;
-}
-.type3 .inv-el4 {
-	width: 30px;
-}
-.type3 .inv-el5 {
-	width: 40px;
-}
-.type3 .inv-el6 {
-	width: 50px;
-}
-.type3 .inv-helper {
-	background-color: #000;
-}
-.type3 .inv-helper1 {
-	left: 20px;
-	top: 20px;
-	width: 10px;
-}
-.type3 .inv-helper2,
-.type3 .inv-helper3 {
-	top: 24px;
-	width: 5px;
-}
-.type3 .inv-helper2 {
-	left: 15px;
-}
-.type3 .inv-helper3 {
-	right: 15px;
-}
-.type3 .inv-helper4 {
-	left: 5px;
-	top: 28px;
-	width: 40px;
-}
-.type3 .inv-helper5,
-.type3 .inv-helper6 {
-	top: 12px;
-	width: 10px;
-}
-.type3 .inv-helper5 {
-	left: 10px;
-}
-.type3 .inv-helper6 {
-	right: 10px;
-}
-
 /* Aides
 ----------------------------------------------- */
 .hidden { display: none !important; visibility: hidden; }
