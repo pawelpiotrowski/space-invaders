@@ -10,7 +10,7 @@ function invade() {
 			var invClone = invader.cloneNode(true);
 			invRows[i].appendChild(invClone);
 			j += 1;
-		} while (j < 6);
+		} while (j < 10);
 	}
 }
 DOMReady.add(function(){ invade() });

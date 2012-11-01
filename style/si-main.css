@@ -10,32 +10,54 @@ ol, ul { list-style: none; }
 /* Page styles
 ----------------------------------------------- */
 html, body, #scene { font-family: sans-serif; height: 100%; width: 100%; }
-html { background-color: #666; }
-body { background-color: #000; }
+html { background-color: #000; }
 #scene { position: relative; }
 #invaders {
-	margin: 0 auto;
-	padding-top: 20px;
-	width: 70%;
+	height: 128px;
+	margin: 50px auto;
+	width: 480px;
+	outline: 1px solid #fff;
+}
+.invaders-row {
+	outline: 1px solid red;
+	margin: 10px auto;
+}
+.type1 {
+	height: 25%;
+	width: 77.78%;
+}
+.type2 {
+	height: 23.21%;
+	width: 99.31%;
+}
+.type3 {
+	height: 21.44%;
+	width: 100%;
 }
 .invader {
+	outline: 1px solid green;
 	display: inline-block;
-	height: 32px;
-	margin: 10px;
+	height: 100%;
+	margin: 0 1%;
 	position: relative;
-	width: 50px;
+	width: 8%;
+}
+.invader-body {
+	height: 100%;
+	width: 100%;
 }
 .inv-el {
+	outline: 1px solid blue;
 	display: block;
-	height: 4px;
+	height: 12.5%;
 }
+/*
 .inv-helper {
 	background-color: #000;
 	display: block;
 	height: 4px;
 	position: absolute;
 }
-/* type 1 - 1st row */
 .type1 .inv-el1 {
 	background: -moz-linear-gradient(left,  #000000 0%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 100%);
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(100%,#000000));
@@ -149,6 +171,7 @@ body { background-color: #000; }
 	background: -ms-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
 	background: linear-gradient(to right,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
 }
+*/
 /* Aides
 ----------------------------------------------- */
 .hidden { display: none !important; visibility: hidden; }
