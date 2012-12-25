@@ -1,0 +1,141 @@
+#invaders {
+	outline: 1px solid #fff;
+}
+.invaders-row {
+	outline: 1px solid red;
+}
+.invader {
+	outline: 1px solid green;
+}
+.inv-el {
+	outline: 1px solid blue;
+}
+
+
+/*
+.inv-helper {
+	background-color: #000;
+	display: block;
+	height: 4px;
+	position: absolute;
+}
+.type1 .inv-el1 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 100%);
+}
+.type1 .inv-el2 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 30%, #ffffff 30%, #ffffff 70%, #000000 70%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+}
+.type1 .inv-el3 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 20%, #ffffff 20%, #ffffff 80%, #000000 80%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(20%,#000000), color-stop(20%,#ffffff), color-stop(80%,#ffffff), color-stop(80%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 80%,#000000 80%,#000000 100%);
+}
+.type1 .inv-el4 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 30%, #000000 30%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 70%, #ffffff 70%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(30%,#ffffff), color-stop(30%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(70%,#000000), color-stop(70%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+}
+.type1 .inv-el5 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+}
+.type1 .inv-el6 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 30%, #ffffff 30%, #ffffff 40%, #000000 40%, #000000 60%, #ffffff 60%, #ffffff 70%, #000000 70%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(40%,#ffffff), color-stop(40%,#000000), color-stop(60%,#000000), color-stop(60%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 100%);
+}
+.type1 .inv-el7 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 20%, #ffffff 20%, #ffffff 30%, #000000 30%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 70%, #ffffff 70%, #ffffff 80%, #000000 80%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(20%,#000000), color-stop(20%,#ffffff), color-stop(30%,#ffffff), color-stop(30%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(70%,#000000), color-stop(70%,#ffffff), color-stop(80%,#ffffff), color-stop(80%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 80%,#000000 80%,#000000 100%);
+}
+.type1 .inv-el8 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 20%, #000000 20%, #000000 30%, #ffffff 30%, #ffffff 40%, #000000 40%, #000000 60%, #ffffff 60%, #ffffff 70%, #000000 70%, #000000 80%, #ffffff 80%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(20%,#ffffff), color-stop(20%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(40%,#ffffff), color-stop(40%,#000000), color-stop(60%,#000000), color-stop(60%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(80%,#000000), color-stop(80%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 20%,#000000 20%,#000000 30%,#ffffff 30%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 70%,#000000 70%,#000000 80%,#ffffff 80%,#ffffff 90%,#000000 90%,#000000 100%);
+}
+.type2 .inv-el1 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 30%, #ffffff 30%, #ffffff 70%, #000000 70%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(30%,#000000), color-stop(30%,#ffffff), color-stop(70%,#ffffff), color-stop(70%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 30%,#ffffff 30%,#ffffff 70%,#000000 70%,#000000 100%);
+}
+.type2 .inv-el2 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 90%,#000000 90%,#000000 100%);
+}
+.type2 .inv-el3, .type2 .inv-el5 { background: #fff; }
+.type2 .inv-el4 {
+	background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 20%, #000000 20%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 80%, #ffffff 80%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(20%,#ffffff), color-stop(20%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(80%,#000000), color-stop(80%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: linear-gradient(to right,  #ffffff 0%,#ffffff 20%,#000000 20%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 80%,#ffffff 80%,#ffffff 100%);
+}
+.type2 .inv-el6 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 20%, #ffffff 20%, #ffffff 40%, #000000 40%, #000000 60%, #ffffff 60%, #ffffff 80%, #000000 80%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(20%,#000000), color-stop(20%,#ffffff), color-stop(40%,#ffffff), color-stop(40%,#000000), color-stop(60%,#000000), color-stop(60%,#ffffff), color-stop(80%,#ffffff), color-stop(80%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 20%,#ffffff 20%,#ffffff 40%,#000000 40%,#000000 60%,#ffffff 60%,#ffffff 80%,#000000 80%,#000000 100%);
+}
+.type2 .inv-el7 {
+	background: -moz-linear-gradient(left,  #000000 0%, #000000 10%, #ffffff 10%, #ffffff 30%, #000000 30%, #000000 40%, #ffffff 40%, #ffffff 60%, #000000 60%, #000000 70%, #ffffff 70%, #ffffff 90%, #000000 90%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(10%,#000000), color-stop(10%,#ffffff), color-stop(30%,#ffffff), color-stop(30%,#000000), color-stop(40%,#000000), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,#000000), color-stop(70%,#000000), color-stop(70%,#ffffff), color-stop(90%,#ffffff), color-stop(90%,#000000), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -o-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: -ms-linear-gradient(left,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+	background: linear-gradient(to right,  #000000 0%,#000000 10%,#ffffff 10%,#ffffff 30%,#000000 30%,#000000 40%,#ffffff 40%,#ffffff 60%,#000000 60%,#000000 70%,#ffffff 70%,#ffffff 90%,#000000 90%,#000000 100%);
+}
+.type2 .inv-el8 {
+	background: -moz-linear-gradient(left,  #ffffff 1%, #ffffff 20%, #000000 20%, #000000 80%, #ffffff 80%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#ffffff), color-stop(20%,#ffffff), color-stop(20%,#000000), color-stop(80%,#000000), color-stop(80%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -o-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: -ms-linear-gradient(left,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+	background: linear-gradient(to right,  #ffffff 1%,#ffffff 20%,#000000 20%,#000000 80%,#ffffff 80%,#ffffff 100%);
+}
+*/
+/* Aides
+----------------------------------------------- */
+.hidden { display: none !important; visibility: hidden; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
