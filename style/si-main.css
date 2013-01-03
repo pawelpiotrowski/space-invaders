@@ -216,12 +216,12 @@ background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,#000000 9.
 	background-image: linear-gradient(to right,  #000000 0%,#000000 16.66%,#ffffff 16.66%,#ffffff 33.32%,#000000 33.32%,#000000 41.65%,#ffffff 41.65%,#ffffff 58.35%,#000000 58.35%,#000000 66.68%,#ffffff 66.68%,#ffffff 83.34%,#000000 83.34%,#000000 100%);
 }
 .type3 .inv-el8 {
-background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 16.66%, #000000 16.66%, #000000 83.34%, #ffffff 83.34%, #ffffff 100%);
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(16.66%,#ffffff), color-stop(16.66%,#000000), color-stop(83.34%,#000000), color-stop(83.34%,#ffffff), color-stop(100%,#ffffff));
-background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
-background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
-background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
-background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 16.66%, #000000 16.66%, #000000 83.34%, #ffffff 83.34%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(16.66%,#ffffff), color-stop(16.66%,#000000), color-stop(83.34%,#000000), color-stop(83.34%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
 }
 
 /* Aides
