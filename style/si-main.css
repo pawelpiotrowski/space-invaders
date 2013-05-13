@@ -189,12 +189,12 @@ background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,#000000 9.
 	background-color: #fff;
 }
 .type3 .inv-el4 {
-	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 24.99%, #000000 24.99%, #000000 41.63%, #ffffff 41.63%, #ffffff 58.33%, #000000 58.33%, #000000 74.99%, #ffffff 74.99%, #ffffff 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(24.99%,#ffffff), color-stop(24.99%,#000000), color-stop(41.63%,#000000), color-stop(41.63%,#ffffff), color-stop(58.33%,#ffffff), color-stop(58.33%,#000000), color-stop(74.99%,#000000), color-stop(74.99%,#ffffff), color-stop(100%,#ffffff));
-	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.99%,#ffffff 74.99%,#ffffff 100%);
-	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.99%,#ffffff 74.99%,#ffffff 100%);
-	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.99%,#ffffff 74.99%,#ffffff 100%);
-	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.99%,#ffffff 74.99%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 24.99%, #000000 24.99%, #000000 41.63%, #ffffff 41.63%, #ffffff 58.33%, #000000 58.33%, #000000 74.95%, #ffffff 74.95%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(24.99%,#ffffff), color-stop(24.99%,#000000), color-stop(41.63%,#000000), color-stop(41.63%,#ffffff), color-stop(58.33%,#ffffff), color-stop(58.33%,#000000), color-stop(74.95%,#000000), color-stop(74.95%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
 }
 .type3 .inv-el5 {
 	background-color: #fff;
