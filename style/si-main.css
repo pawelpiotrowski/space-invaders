@@ -12,10 +12,36 @@ ol, ul { list-style: none; }
 html, body, #scene { font-family: sans-serif; height: 100%; width: 100%; }
 html { background-color: #000; }
 #scene { position: relative; }
+#invaders, #base {
+	width: 680px;
+}
 #invaders {
 	height: 135px;
 	margin: 50px auto;
-	width: 680px;
+}
+#base {
+	background: yellow;
+	bottom: 60px;
+	height: 60px;
+	left: 50%;
+	margin-left: -340px;
+	position: absolute;
+}
+#spaceship {
+	background: red;
+	height: 35px;
+	left: 312.5px;
+	position: absolute;
+	top: 0;
+	width: 54px;
+}
+.bullet {
+	background-color: blue;
+	height: 15px;
+	margin-left: 24px;
+	margin-top: -10px;
+	position: absolute;
+	width: 6px;
 }
 .invaders-row {
 	height: 25%;
