@@ -17,38 +17,74 @@
 	}
 	*/
 	var shoot = function() {
-		var el = $('#spaceship').get(0);
-		var checkcollision2 = function(a,b) {
-			return !(
-				((a.y + a.height) < (b.y)) ||
-				(a.y > (b.y + b.height)) ||
-				((a.x + a.width) < b.x) ||
-				(a.x > (b.x + b.width))
-			);
-		}
-		var checkcollision = function(el) {
-			var c = $(el).collision('.invader');
-			if(c.length) { return c; };
-		}
-		var touts = {};
-		var elInView = function() {
+		var elInView = function(el) {
 			var rect = el.getBoundingClientRect();
-			var p = { l: rect.left, t: rect.top }
+			var p = { x: rect.left, y: rect.top }
 			return p;
 		};
+		var checkcollision = function(b) {
+			var all = $('.invader.alive');
+			var l = all.length;
+			for(var i=0;i<l;i++) {
+				var _a = all[i];
+				var a = {
+					x: (elInView(_a)).x,
+					y: (elInView(_a)).y,
+					width: $(_a).width(),
+					height: $(_a).height()
+				}
+				var c = !(
+					((a.y + a.height) < (b.y)) ||
+					(a.y > (b.y + b.height)) ||
+					((a.x + a.width) < b.x) ||
+					(a.x > (b.x + b.width))
+				);
+				
+					//console.log(i);
+				if(c) {
+					console.log(_a);
+					console.log(i);
+					$(_a).removeClass('alive');
+					return c;
+					break;
+				}
+			}
+		}
+		
 		var rid = 'rand_'+parseInt(Math.random()*1000000);
 		$('#base').before('<div id="'+rid+'" class="bullet" />');
 		//touts[rid] = setInterval(function() { checkcollision($('#'+rid)) },50);
-		touts[rid] = setInterval(function() {
-			var a = checkcollision($('#invaders').get(0),$('#'+rid).get(0));
-			console.log(a);
-		}, 50);
-		$('#'+rid).css({'left':(elInView()).l,'top':(elInView()).t}).animate({'top':'-'+window.innerHeight},2500, function() {
-			$('#'+rid).remove();
-			window.clearInterval(touts[rid]);
-			touts[rid] = null;
-		});
+		
+			var _b = $('#'+rid);
+			var _bh = $(_b).height();
+			var _bw = $(_b).width();
+			//console.log(a);
+			
+		$('#'+rid).css({'left':(elInView($('#spaceship').get(0))).x,'top':(elInView($('#spaceship').get(0))).y})
+		.animate(
+			{
+				'top':'-'+window.innerHeight
+			},
+			{
+				duration: 2500,
+				step: function(now, fx) {
+					//console.log(now);
+					var b = {
+						x: (elInView(this)).x,
+						y: (elInView(this)).y,
+						width: _bh,
+						height: _bw
+					}
+					if(checkcollision(b)) { console.log('stop'); $(this).stop().remove(); };
+					//console.log(fx);
+				},
+				complete: function() {
+					$('#'+rid).remove();
+				}
+			}
+		)
 	}
+
 	var moveSpaceship = function(dir) {
 		if(!dir) {
 			$('#spaceship').animate({ 'margin-left': '-=8' },100,'linear');
