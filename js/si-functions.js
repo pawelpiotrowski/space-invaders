@@ -10,6 +10,7 @@
 				j += 1;
 			} while (j < 10);
 		}
+		$('#spaceship').css('left',313)
 	};
 	/*
 	var drawBoard = function() {
@@ -17,7 +18,7 @@
 	}
 	*/
 	var shoot = function() {
-		var elInView = function(el) {
+		var elPos = function(el) {
 			var rect = el.getBoundingClientRect();
 			var p = { x: rect.left, y: rect.top }
 			return p;
@@ -28,8 +29,8 @@
 			for(var i=0;i<l;i++) {
 				var _a = all[i];
 				var a = {
-					x: (elInView(_a)).x,
-					y: (elInView(_a)).y,
+					x: (elPos(_a)).x,
+					y: (elPos(_a)).y,
 					width: $(_a).width(),
 					height: $(_a).height()
 				}
@@ -39,43 +40,42 @@
 					((a.x + a.width) < b.x) ||
 					(a.x > (b.x + b.width))
 				);
-				
-					//console.log(i);
 				if(c) {
 					console.log(_a);
 					console.log(i);
+					console.log(a);
+					console.log(b);
 					$(_a).removeClass('alive');
 					return c;
 					break;
 				}
 			}
 		}
-		
+		// random id
 		var rid = 'rand_'+parseInt(Math.random()*1000000);
 		$('#base').before('<div id="'+rid+'" class="bullet" />');
 		//touts[rid] = setInterval(function() { checkcollision($('#'+rid)) },50);
 		
-			var _b = $('#'+rid);
-			var _bh = $(_b).height();
-			var _bw = $(_b).width();
-			//console.log(a);
-			
-		$('#'+rid).css({'left':(elInView($('#spaceship').get(0))).x,'top':(elInView($('#spaceship').get(0))).y})
-		.animate(
+		var _b = $('#'+rid);
+		var _bh = $(_b).height();
+		var _bw = $(_b).width();
+		var _ss = $('#spaceship').get(0);
+		var _ssp = elPos(_ss);
+		$('#'+rid).css({'left':_ssp.x,'top':_ssp.y}).animate(
 			{
 				'top':'-'+window.innerHeight
 			},
 			{
 				duration: 2500,
-				step: function(now, fx) {
+				progress: function(now, fx) {
 					//console.log(now);
 					var b = {
-						x: (elInView(this)).x,
-						y: (elInView(this)).y,
-						width: _bh,
-						height: _bw
+						x: (elPos(this)).x,
+						y: (elPos(this)).y,
+						width: _bw,
+						height: _bh
 					}
-					if(checkcollision(b)) { console.log('stop'); $(this).stop().remove(); };
+					if(checkcollision(b)) { $(this).stop().remove(); };
 					//console.log(fx);
 				},
 				complete: function() {
@@ -84,17 +84,32 @@
 			}
 		)
 	}
-
+	var spPending = 0;
 	var moveSpaceship = function(dir) {
-		if(!dir) {
-			$('#spaceship').animate({ 'margin-left': '-=8' },100,'linear');
-		} else {
-			if(dir < 2) {
-				$('#spaceship').animate({ 'margin-left': '+=8' },100,'linear')
+		if(!spPending) {
+			var currPos = parseInt($('#spaceship').css('margin-left'));
+			var spaceshipSpeed = 12000;
+			var maxLeft = parseInt($('#base').width() - $('#spaceship').width());
+			// time for animating 1px
+			var animStep = spaceshipSpeed / maxLeft;
+			// time for animating current action default assumes starting from middle
+			var currSpeed = spaceshipSpeed / 2;
+			var moveTo = maxLeft / 2;
+			if(dir) {
+				currSpeed = ((maxLeft / 2) - currPos) * animStep
 			} else {
-				$('#spaceship').stop(true,true);
+				currSpeed = ((maxLeft / 2) + currPos) * animStep;
+				moveTo = -moveTo;
 			}
+			var moveTo = (dir) ? maxLeft / 2 : -maxLeft / 2;
+			spPending = 1;
+			$('#spaceship').animate({ 'margin-left': moveTo },currSpeed,'linear');
 		}
+	};
+	
+	var stopSpaceship = function() {
+		$('#spaceship').stop(true,false);
+		spPending = 0;
 	};
 	
 	var bindKeys = function() {
@@ -112,18 +127,14 @@
 			}
 		});
 		$(document).keyup(function(evt) {
-			if (evt.keyCode == 37) {
-				moveSpaceship(2)
-			} else if(evt.keyCode == 39) {
-				moveSpaceship(2)
+			if (evt.keyCode == 37 || evt.keyCode == 39) {
+				stopSpaceship();
 			}
 		});
 		$('html').on('click', function() { shoot() })
 	};
 	
 	$(function() {
-		console.log('space invaders DOM ready');
-		//$('#spaceship').css('margin-left',($('#spaceship').position()).left)
 		drawBoard();
 		bindKeys()
 	});

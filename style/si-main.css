@@ -30,7 +30,7 @@ html { background-color: #000; }
 #spaceship {
 	background: red;
 	height: 35px;
-	left: 312.5px;
+	left: 0;
 	position: absolute;
 	top: 0;
 	width: 54px;
@@ -38,10 +38,10 @@ html { background-color: #000; }
 .bullet {
 	background-color: blue;
 	height: 15px;
-	margin-left: 24px;
+	margin-left: 27px;
 	margin-top: -10px;
 	position: absolute;
-	width: 6px;
+	width: 2px;
 }
 .invaders-row {
 	height: 25%;
