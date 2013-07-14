@@ -92,7 +92,7 @@
 			var maxLeft = parseInt($('#base').width() - $('#spaceship').width());
 			// time for animating 1px
 			var animStep = spaceshipSpeed / maxLeft;
-			// time for animating current action default assumes starting from middle
+			// time for animating current action default assumes starting from the middle
 			var currSpeed = spaceshipSpeed / 2;
 			var moveTo = maxLeft / 2;
 			if(dir) {
@@ -101,7 +101,6 @@
 				currSpeed = ((maxLeft / 2) + currPos) * animStep;
 				moveTo = -moveTo;
 			}
-			var moveTo = (dir) ? maxLeft / 2 : -maxLeft / 2;
 			spPending = 1;
 			$('#spaceship').animate({ 'margin-left': moveTo },currSpeed,'linear');
 		}
