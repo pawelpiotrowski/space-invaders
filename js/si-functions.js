@@ -1,4 +1,8 @@
 (function() {
+	
+	var __spaceshipSpeed = 12000;
+	var __maxLeft = parseInt($('#base').width() - $('#spaceship').width());
+	var __animStep = __spaceshipSpeed / __maxLeft; // time for animating 1px
 	var drawBoard = function() {
 		var invRows = document.querySelectorAll('.invaders-row');
 		for(var i = 0; i < invRows.length; i++) {
@@ -10,13 +14,28 @@
 				j += 1;
 			} while (j < 10);
 		}
-		$('#spaceship').css('left',313)
+		$('#spaceship').css('margin-left', __maxLeft / 2);
 	};
-	/*
-	var drawBoard = function() {
-		
+	var sfx = function(n,type) {
+		var sound_id = 'sfx_'+n;
+		var shootHTML = '<audio id="'+sound_id+'" preload="auto">'+
+					'<source src="audio/shoot_sfx.mp3"></source>'+
+					'<source src="audio/shoot_sfx.ogg"></source>'+
+					'</audio>';
+		var dieHTML = '<audio id="'+sound_id+'" preload="auto">'+
+					'<source src="audio/scream_1.mp3"></source>'+
+					'<source src="audio/scream_1.ogg"></source>'+
+					'</audio>';
+		var destroy_sound = function(sid) {
+			setTimeout(function() {
+				$('#'+sid).remove();
+			}, 1000)
+		}
+		var s = (type == 'shoot') ? shootHTML : dieHTML;
+		$('#sounds').append(s);
+		$('#'+sound_id).get(0).play();
+		destroy_sound(sound_id);
 	}
-	*/
 	var shoot = function() {
 		var elPos = function(el) {
 			var rect = el.getBoundingClientRect();
@@ -41,11 +60,9 @@
 					(a.x > (b.x + b.width))
 				);
 				if(c) {
-					console.log(_a);
-					console.log(i);
-					console.log(a);
-					console.log(b);
+					var rid = 'rand_'+parseInt(Math.random()*1000000);
 					$(_a).removeClass('alive');
+					sfx(rid,'die');
 					return c;
 					break;
 				}
@@ -54,21 +71,20 @@
 		// random id
 		var rid = 'rand_'+parseInt(Math.random()*1000000);
 		$('#base').before('<div id="'+rid+'" class="bullet" />');
-		//touts[rid] = setInterval(function() { checkcollision($('#'+rid)) },50);
-		
-		var _b = $('#'+rid);
-		var _bh = $(_b).height();
-		var _bw = $(_b).width();
-		var _ss = $('#spaceship').get(0);
-		var _ssp = elPos(_ss);
-		$('#'+rid).css({'left':_ssp.x,'top':_ssp.y}).animate(
+		var _b = $('#'+rid); // bullet
+		var _bh = $(_b).height(); // bullet height
+		var _bw = $(_b).width(); // bullet width
+		var _ss = $('#spaceship').get(0); // spaceship as js object
+		var _ssp = elPos(_ss); // spaceship current position
+		var _sspycorr = _ssp.y - 1; // correction for placing bullet at the top of spaceship
+		$('#'+rid).css({'left':_ssp.x,'top':_sspycorr}).animate(
 			{
 				'top':'-'+window.innerHeight
 			},
 			{
 				duration: 2500,
+				easing: 'linear',
 				progress: function(now, fx) {
-					//console.log(now);
 					var b = {
 						x: (elPos(this)).x,
 						y: (elPos(this)).y,
@@ -76,52 +92,33 @@
 						height: _bh
 					}
 					if(checkcollision(b)) { $(this).stop().remove(); };
-					//console.log(fx);
 				},
 				complete: function() {
 					$('#'+rid).remove();
 				}
 			}
-		)
+		);
+		sfx(rid,'shoot');
 	}
-	var spPending = 0;
 	var moveSpaceship = function(dir) {
-		if(!spPending) {
-			var currPos = parseInt($('#spaceship').css('margin-left'));
-			var spaceshipSpeed = 12000;
-			var maxLeft = parseInt($('#base').width() - $('#spaceship').width());
-			// time for animating 1px
-			var animStep = spaceshipSpeed / maxLeft;
-			// time for animating current action default assumes starting from the middle
-			var currSpeed = spaceshipSpeed / 2;
-			var moveTo = maxLeft / 2;
-			if(dir) {
-				currSpeed = ((maxLeft / 2) - currPos) * animStep
-			} else {
-				currSpeed = ((maxLeft / 2) + currPos) * animStep;
-				moveTo = -moveTo;
-			}
-			spPending = 1;
-			$('#spaceship').animate({ 'margin-left': moveTo },currSpeed,'linear');
-		}
-	};
+		var currPos = parseInt($('#spaceship').css('margin-left'));
+		var currSpeed = (dir) ? (__maxLeft - currPos) * __animStep: currPos * __animStep;
+		var moveTo = (dir) ? __maxLeft : 0;
+		$('#spaceship').animate({ 'margin-left': moveTo },currSpeed,'linear');
+	}     
 	
 	var stopSpaceship = function() {
 		$('#spaceship').stop(true,false);
-		spPending = 0;
 	};
 	
 	var bindKeys = function() {
 		$(document).keydown(function(evt) {
 			if (evt.keyCode == 32) {
 				evt.preventDefault();
-				console.log('Space bar keydown');
-				//shoot();
+				shoot();
 			} else if(evt.keyCode == 37) {
-				console.log('Left arrow keydown');
 				moveSpaceship(0)
 			} else if(evt.keyCode == 39) {
-				console.log('Right arrow keydown');
 				moveSpaceship(1)
 			}
 		});
@@ -130,7 +127,9 @@
 				stopSpaceship();
 			}
 		});
+		/*
 		$('html').on('click', function() { shoot() })
+		*/
 	};
 	
 	$(function() {

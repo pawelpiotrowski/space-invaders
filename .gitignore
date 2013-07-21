@@ -1,0 +1,38 @@
+#PSD files #
+################
+*.psd
+
+#Temp directory #
+################
+temp/*
+#Docs directory#
+docs/*
+#Logs directory#
+logs/*
+
+# config files #
+###################
+config
+.htaccess
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

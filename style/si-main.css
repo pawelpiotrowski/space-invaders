@@ -9,20 +9,16 @@ body { line-height: 1}
 ol, ul { list-style: none; }
 /* Page styles
 ----------------------------------------------- */
-html, body, #scene { font-family: sans-serif; height: 100%; width: 100%; }
+html, body, #scene { font-family: sans-serif; height: 100%; overflow: hidden; width: 100%; }
 html { background-color: #000; }
-#scene { position: relative; }
-#invaders, #base {
-	width: 680px;
-}
-#invaders {
-	height: 135px;
-	margin: 50px auto;
-}
+body, #scene {  }
+#scene { max-height: 800px; position: relative; }
+#invaders, #base { width: 680px; }
+#invaders { height: 135px; margin: 50px auto; }
 #base {
-	background: yellow;
+	border-bottom: 3px solid #fff;
 	bottom: 60px;
-	height: 60px;
+	height: 57px;
 	left: 50%;
 	margin-left: -340px;
 	position: absolute;
@@ -36,7 +32,7 @@ html { background-color: #000; }
 	width: 54px;
 }
 .bullet {
-	background-color: blue;
+	background-color: #fff;
 	height: 15px;
 	margin-left: 27px;
 	margin-top: -10px;
