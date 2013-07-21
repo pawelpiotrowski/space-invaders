@@ -113,18 +113,18 @@
 	
 	var bindKeys = function() {
 		$(document).keydown(function(evt) {
-			if (evt.keyCode == 32) {
-				evt.preventDefault();
-				shoot();
-			} else if(evt.keyCode == 37) {
+			if(evt.keyCode == 37) {
 				moveSpaceship(0)
 			} else if(evt.keyCode == 39) {
 				moveSpaceship(1)
 			}
 		});
 		$(document).keyup(function(evt) {
+			evt.preventDefault();
 			if (evt.keyCode == 37 || evt.keyCode == 39) {
 				stopSpaceship();
+			} else if(evt.keyCode == 32) {
+				shoot();
 			}
 		});
 		/*
