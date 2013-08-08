@@ -4,6 +4,25 @@
 	var __maxLeft = parseInt($('#base').width() - $('#spaceship').width());
 	var __animStep = __spaceshipSpeed / __maxLeft; // time for animating 1px
 	var drawBoard = function() {
+		var invade = function() {
+			var _invaders = $('#invaders').get(0);
+			var animIteration = 0;
+			var animIterHandler = function(e) {
+				animIteration++;
+				(animIteration%2 == 0) ? console.log('left') : console.log('right');
+				console.log(e);
+				$(_invaders).css('margin-top','+=10px');
+			}
+			var pfx = ["webkit", "moz", "MS", "o", ""];
+			var prefAnimListener = function(type, clbk) {
+				for (var p = 0; p < pfx.length; p++) {
+					if (!pfx[p]) type = type.toLowerCase();
+					_invaders.addEventListener(pfx[p]+type, clbk, false);
+				}
+			}
+			prefAnimListener('AnimationIteration',animIterHandler)
+			$(_invaders).addClass('invade');
+		};
 		var invRows = document.querySelectorAll('.invaders-row');
 		for(var i = 0; i < invRows.length; i++) {
 			var invader = invRows[i].querySelector('.invader'), j = 0;
@@ -15,6 +34,7 @@
 			} while (j < 10);
 		}
 		$('#spaceship').css('margin-left', __maxLeft / 2);
+		invade();
 	};
 	var sfx = function(n,type) {
 		var sound_id = 'sfx_'+n;
@@ -33,7 +53,9 @@
 		}
 		var s = (type == 'shoot') ? shootHTML : dieHTML;
 		$('#sounds').append(s);
-		$('#'+sound_id).get(0).play();
+		var s = $('#'+sound_id).get(0);
+		s.volume = 0.2;
+		s.play();
 		destroy_sound(sound_id);
 	}
 	var shoot = function() {

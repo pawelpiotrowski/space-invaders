@@ -14,7 +14,57 @@ html { background-color: #000; }
 body, #scene {  }
 #scene { max-height: 800px; position: relative; }
 #invaders, #base { width: 680px; }
-#invaders { height: 135px; margin: 50px auto; }
+#invaders {
+	height: 135px;
+	margin: 50px auto;
+	position: relative;
+}
+.invade {
+	-webkit-animation: invade;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1400ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation: invade;
+	-moz-animation-direction:  alternate;
+	-moz-animation-duration: 1400ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	-o-animation: invade;
+	-o-animation-direction:  alternate;
+	-o-animation-duration: 1400ms;
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: ease-in-out;
+	animation: invade;
+	animation-direction:  alternate;
+	animation-duration: 1400ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes invade {
+	from { -webkit-transform: translateX(-100px); }
+	to { -webkit-transform: translateX(100px); }
+}
+
+
+@-moz-keyframes invade {
+	from { -moz-transform: translateX(-100px); }
+	to { -moz-transform: translateX(100px); }
+}
+
+
+@-o-keyframes invade {
+	from { -o-transform: translateX(-100px); }
+	to { -o-transform: translateX(100px); }
+}
+
+
+@keyframes invade {
+	from { transform: translateX(-100px); }
+	to { transform: translateX(100px); }
+}
+
 #base {
 	border-bottom: 3px solid #fff;
 	bottom: 60px;
@@ -253,6 +303,7 @@ background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,#000000 9.
 	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
 	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
 }
+
 
 /* Aides
 ----------------------------------------------- */
