@@ -77,9 +77,11 @@ body, #scene {  }
 	background: red;
 	height: 35px;
 	left: 0;
+	opacity: 1;
 	position: absolute;
 	top: 0;
 	width: 54px;
+	-webkit-transition: opacity 250ms linear; -moz-transition: opacity 250ms linear; -ms-transition: opacity 250ms linear; -o-transition: opacity 250ms linear; transition: opacity 250ms linear;
 }
 .bullet {
 	background-color: #fff;
@@ -88,6 +90,9 @@ body, #scene {  }
 	margin-top: -10px;
 	position: absolute;
 	width: 2px;
+}
+.alien-bullet {
+	background: red;
 }
 .invaders-row {
 	height: 25%;
