@@ -91,18 +91,9 @@
 		// random id
 		var rid = 'rand_'+parseInt(Math.random()*1000000);
 		
+		var bulletClass = (alienFlag) ? 'bullet': 'bullet alien-bullet';
 		
-		if(alienFlag) {
-			//console.log('alien flag bullet true');
-			$('#base').before('<div id="'+rid+'" class="bullet" />');
-		} else {
-			//console.log('alien flag bullet false');
-			// here we need place bullet where invader is
-			$('#base').before('<div id="'+rid+'" class="bullet alien-bullet" />');
-		}
-		
-		
-		
+		$('#base').before('<div id="'+rid+'" class="'+bulletClass+'" />');
 		
 		var _b = $('#'+rid); // bullet
 		var _bh = $(_b).height(); // bullet height
@@ -209,6 +200,8 @@
 		
 	
 	var sfx = function(n,type) {
+		// console.log('sound disabled'); return;
+		
 		var sound_id = 'sfx_'+n;
 		var alienshootHTML = '<audio id="'+sound_id+'" preload="auto">'+
 					'<source src="audio/alienshoot_sfx1.mp3"></source>'+
@@ -245,9 +238,9 @@
 		var destroy_sound = function(sid) {
 			setTimeout(function() {
 				$('#'+sid).remove();
-			}, 1000)
+			}, 2500)
 		}
-		console.log(type);
+		//console.log(type);
 		var s; switch(type) {
 			case 'alienShoot':
 				s = alienshootHTML
@@ -259,7 +252,7 @@
 				s = aliendieHTML
 			break;
 			case 'humandie1':
-				s = humandie1HTML
+				s = humandie2HTML
 			break;
 			case 'humandie2':
 				s = humandie2HTML

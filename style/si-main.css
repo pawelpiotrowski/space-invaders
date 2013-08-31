@@ -10,8 +10,13 @@ ol, ul { list-style: none; }
 /* Page styles
 ----------------------------------------------- */
 html, body, #scene { font-family: sans-serif; height: 100%; overflow: hidden; width: 100%; }
-html { background-color: #000; }
-body, #scene {  }
+html, body { background-color: #000; }
+
+body { 
+	background-image: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABcAAD/4QMbaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQzODYzRjY2MEFBNTExRTM4NDIwOTE2RUVCQjJGNzBGIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQzODYzRjY1MEFBNTExRTM4NDIwOTE2RUVCQjJGNzBGIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9IkEzMkVDNTkyOENDMjg4MzIxNEU3NDUyMTJDNTRBMjIzIiBzdFJlZjpkb2N1bWVudElEPSJBMzJFQzU5MjhDQzI4ODMyMTRFNzQ1MjEyQzU0QTIyMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAEBAQEBAQEBAQEBAQEBAQIBAQEBAgICAgICAgIDAgICAgIC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);
+	background-repeat: repeat;
+}
+
 #scene { max-height: 800px; position: relative; }
 #invaders, #base { width: 680px; }
 #invaders {
@@ -74,7 +79,6 @@ body, #scene {  }
 	position: absolute;
 }
 #spaceship {
-	background: red;
 	height: 35px;
 	left: 0;
 	opacity: 1;
@@ -85,18 +89,21 @@ body, #scene {  }
 }
 .bullet {
 	background-color: #fff;
+	height: 10px;
+	margin-left: 28px;
+	margin-top: -13px;
+	position: absolute;
+	width: 4px;
+}
+.alien-bullet {
 	height: 15px;
 	margin-left: 27px;
 	margin-top: -10px;
-	position: absolute;
 	width: 2px;
 }
-.alien-bullet {
-	background: red;
-}
 .invaders-row {
-	height: 25%;
-	margin: 10px auto;
+	height: 22.5%;
+	margin: 12px auto;
 }
 .type1 {
 	/* height: 25%; */
@@ -113,11 +120,11 @@ body, #scene {  }
 .invader {
 	display: inline-block;
 	height: 100%;
-	margin: 0 1%;
+	margin: 0 1.75%;
 	opacity: 0;
 	position: relative;
 	vertical-align: top;
-	width: 8%;
+	width: 6.5%;
   -webkit-transition: all 0.3s ease-out; 
      -moz-transition: all 0.3s ease-out; 
        -o-transition: all 0.3s ease-out; 
@@ -130,183 +137,211 @@ body, #scene {  }
 	height: 100%;
 	width: 100%;
 }
-.inv-el {
+.inv-el, .ss-el {
 	display: block;
 	height: 12.5%;
+}
+/* spaceship */
+.ss-el1 {
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 47%, #ffffff 47%, #ffffff 53%, transparent 53%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(47%,transparent), color-stop(47%,#ffffff), color-stop(53%,#ffffff), color-stop(53%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 47%,#ffffff 47%,#ffffff 53%,transparent 53%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 47%,#ffffff 47%,#ffffff 53%,transparent 53%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 47%,#ffffff 47%,#ffffff 53%,transparent 53%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 47%,#ffffff 47%,#ffffff 53%,transparent 53%,transparent 100%);
+}
+.ss-el2, .ss-el3 {
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(40%,transparent), color-stop(40%,#ffffff), color-stop(60%,#ffffff), color-stop(60%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 40%,#ffffff 40%,#ffffff 60%,transparent 60%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 40%,#ffffff 40%,#ffffff 60%,transparent 60%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 40%,#ffffff 40%,#ffffff 60%,transparent 60%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 40%,#ffffff 40%,#ffffff 60%,transparent 60%,transparent 100%);
+}
+.ss-el4 {
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 3%, #ffffff 3%, #ffffff 97%, transparent 97%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(3%,transparent), color-stop(3%,#ffffff), color-stop(97%,#ffffff), color-stop(97%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 3%,#ffffff 3%,#ffffff 97%,transparent 97%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 3%,#ffffff 3%,#ffffff 97%,transparent 97%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 3%,#ffffff 3%,#ffffff 97%,transparent 97%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 3%,#ffffff 3%,#ffffff 97%,transparent 97%,transparent 100%);
+}
+.ss-el5, .ss-el6, .ss-el7, .ss-el8 {
+	background-color: #fff;
 }
 
 /* invaders */
 .type1 .inv-el1 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 37.5%, #ffffff 37.5%, #ffffff 62.5%, #000000 62.5%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(37.5%,#000000), color-stop(37.5%,#ffffff), color-stop(62.5%,#ffffff), color-stop(62.5%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 37.5%, #ffffff 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(37.5%,transparent), color-stop(37.5%,#ffffff), color-stop(62.5%,#ffffff), color-stop(62.5%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 100%);
 }
 .type1 .inv-el2 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 25%, #ffffff 25%, #ffffff 75%, #000000 75%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(25%,#000000), color-stop(25%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 75%,#000000 75%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 75%,#000000 75%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 75%,#000000 75%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 75%,#000000 75%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 25%, #ffffff 25%, #ffffff 75%, transparent 75%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(25%,transparent), color-stop(25%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 75%,transparent 75%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 75%,transparent 75%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 75%,transparent 75%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 75%,transparent 75%,transparent 100%);
 }
 .type1 .inv-el3 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 12.5%, #ffffff 12.5%, #ffffff 87.5%, #000000 87.5%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(12.5%,#000000), color-stop(12.5%,#ffffff), color-stop(87.5%,#ffffff), color-stop(87.5%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 12.5%, #ffffff 12.5%, #ffffff 87.5%, transparent 87.5%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(12.5%,transparent), color-stop(12.5%,#ffffff), color-stop(87.5%,#ffffff), color-stop(87.5%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
 }
 .type1 .inv-el4 {
-	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 25%, #000000 25%, #000000 37.5%, #ffffff 37.5%, #ffffff 62.5%, #000000 62.5%, #000000 75%, #ffffff 75%, #ffffff 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#ffffff), color-stop(25%,#000000), color-stop(37.5%,#000000), color-stop(37.5%,#ffffff), color-stop(62.5%,#ffffff), color-stop(62.5%,#000000), color-stop(75%,#000000), color-stop(75%,#ffffff), color-stop(100%,#ffffff));
-	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 100%);
-	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 100%);
-	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 100%);
-	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 25%, transparent 25%, transparent 37.5%, #ffffff 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 75%, #ffffff 75%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#ffffff), color-stop(25%,transparent), color-stop(37.5%,transparent), color-stop(37.5%,#ffffff), color-stop(62.5%,#ffffff), color-stop(62.5%,transparent), color-stop(75%,transparent), color-stop(75%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 100%);
 }
 .type1 .inv-el5 {
 	background-color: #fff;
 }
 .type1 .inv-el6 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 25%, #ffffff 25%, #ffffff 37.5%, #000000 37.5%, #000000 62.5%, #ffffff 62.5%, #ffffff 75%, #000000 75%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(25%,#000000), color-stop(25%,#ffffff), color-stop(37.5%,#ffffff), color-stop(37.5%,#000000), color-stop(62.5%,#000000), color-stop(62.5%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 25%,#ffffff 25%,#ffffff 37.%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 25%, #ffffff 25%, #ffffff 37.5%, transparent 37.5%, transparent 62.5%, #ffffff 62.5%, #ffffff 75%, transparent 75%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(25%,transparent), color-stop(25%,#ffffff), color-stop(37.5%,#ffffff), color-stop(37.5%,transparent), color-stop(62.5%,transparent), color-stop(62.5%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 25%,#ffffff 25%,#ffffff 37.%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 100%);
 }
 .type1 .inv-el7 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 12.5%, #ffffff 12.5%, #ffffff 25%, #000000 25%, #000000 37.5%, #ffffff 37.5%, #ffffff 62.5%, #000000 62.5%, #000000 75%, #ffffff 75%, #ffffff 87.5%, #000000 87.5%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(12.5%,#000000), color-stop(12.5%,#ffffff), color-stop(25%,#ffffff), color-stop(25%,#000000), color-stop(37.5%,#000000), color-stop(37.5%,#ffffff), color-stop(62.5%,#ffffff), color-stop(62.5%,#000000), color-stop(75%,#000000), color-stop(75%,#ffffff), color-stop(87.5%,#ffffff), color-stop(87.5%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 12.5%,#ffffff 12.5%,#ffffff 25%,#000000 25%,#000000 37.5%,#ffffff 37.5%,#ffffff 62.5%,#000000 62.5%,#000000 75%,#ffffff 75%,#ffffff 87.5%,#000000 87.5%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 12.5%, #ffffff 12.5%, #ffffff 25%, transparent 25%, transparent 37.5%, #ffffff 37.5%, #ffffff 62.5%, transparent 62.5%, transparent 75%, #ffffff 75%, #ffffff 87.5%, transparent 87.5%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(12.5%,transparent), color-stop(12.5%,#ffffff), color-stop(25%,#ffffff), color-stop(25%,transparent), color-stop(37.5%,transparent), color-stop(37.5%,#ffffff), color-stop(62.5%,#ffffff), color-stop(62.5%,transparent), color-stop(75%,transparent), color-stop(75%,#ffffff), color-stop(87.5%,#ffffff), color-stop(87.5%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 12.5%,#ffffff 12.5%,#ffffff 25%,transparent 25%,transparent 37.5%,#ffffff 37.5%,#ffffff 62.5%,transparent 62.5%,transparent 75%,#ffffff 75%,#ffffff 87.5%,transparent 87.5%,transparent 100%);
 }
 .type1 .inv-el8 {
-	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 12.5%, #000000 12.5%, #000000 25%, #ffffff 25%, #ffffff 37.5%, #000000 37.5%, #000000 62.5%, #ffffff 62.5%, #ffffff 75%, #000000 75%, #000000 87.5%, #ffffff 87.5%, #ffffff 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(12.5%,#ffffff), color-stop(12.5%,#000000), color-stop(25%,#000000), color-stop(25%,#ffffff), color-stop(37.5%,#ffffff), color-stop(37.5%,#000000), color-stop(62.5%,#000000), color-stop(62.5%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,#000000), color-stop(87.5%,#000000), color-stop(87.5%,#ffffff), color-stop(100%,#ffffff));
-	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 12.5%,#000000 12.5%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 87.5%,#ffffff 87.5%,#ffffff 100%);
-	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 12.5%,#000000 12.5%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 87.5%,#ffffff 87.5%,#ffffff 100%);
-	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 12.5%,#000000 12.5%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 87.5%,#ffffff 87.5%,#ffffff 100%);
-	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 12.5%,#000000 12.5%,#000000 25%,#ffffff 25%,#ffffff 37.5%,#000000 37.5%,#000000 62.5%,#ffffff 62.5%,#ffffff 75%,#000000 75%,#000000 87.5%,#ffffff 87.5%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 12.5%, transparent 12.5%, transparent 25%, #ffffff 25%, #ffffff 37.5%, transparent 37.5%, transparent 62.5%, #ffffff 62.5%, #ffffff 75%, transparent 75%, transparent 87.5%, #ffffff 87.5%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(12.5%,#ffffff), color-stop(12.5%,transparent), color-stop(25%,transparent), color-stop(25%,#ffffff), color-stop(37.5%,#ffffff), color-stop(37.5%,transparent), color-stop(62.5%,transparent), color-stop(62.5%,#ffffff), color-stop(75%,#ffffff), color-stop(75%,transparent), color-stop(87.5%,transparent), color-stop(87.5%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 12.5%,transparent 12.5%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 87.5%,#ffffff 87.5%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 12.5%,transparent 12.5%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 87.5%,#ffffff 87.5%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 12.5%,transparent 12.5%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 87.5%,#ffffff 87.5%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 12.5%,transparent 12.5%,transparent 25%,#ffffff 25%,#ffffff 37.5%,transparent 37.5%,transparent 62.5%,#ffffff 62.5%,#ffffff 75%,transparent 75%,transparent 87.5%,#ffffff 87.5%,#ffffff 100%);
 }
 .type2 .inv-el1 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 18.18%, #ffffff 18.18%, #ffffff 27.27%, #000000 27.27%, #000000 72.73%, #ffffff 72.73%, #ffffff 81.82%, #000000 81.82%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(18.18%,#000000), color-stop(18.18%,#ffffff), color-stop(27.27%,#ffffff), color-stop(27.27%,#000000), color-stop(72.73%,#000000), color-stop(72.73%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 18.18%, #ffffff 18.18%, #ffffff 27.27%, transparent 27.27%, transparent 72.73%, #ffffff 72.73%, #ffffff 81.82%, transparent 81.82%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(18.18%,transparent), color-stop(18.18%,#ffffff), color-stop(27.27%,#ffffff), color-stop(27.27%,transparent), color-stop(72.73%,transparent), color-stop(72.73%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
 }
 .type2 .inv-el2 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 27.27%, #ffffff 27.27%, #ffffff 36.36%, #000000 36.36%, #000000 63.63%, #ffffff 63.63%, #ffffff 72.73%, #000000 72.73%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(27.27%,#000000), color-stop(27.27%,#ffffff), color-stop(36.36%,#ffffff), color-stop(36.36%,#000000), color-stop(63.63%,#000000), color-stop(63.63%,#ffffff), color-stop(72.73%,#ffffff), color-stop(72.73%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 36.36%,#000000 36.36%,#000000 63.63%,#ffffff 63.63%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 36.36%,#000000 36.36%,#000000 63.63%,#ffffff 63.63%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 36.36%,#000000 36.36%,#000000 63.63%,#ffffff 63.63%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 36.36%,#000000 36.36%,#000000 63.63%,#ffffff 63.63%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 27.27%, #ffffff 27.27%, #ffffff 36.36%, transparent 36.36%, transparent 63.63%, #ffffff 63.63%, #ffffff 72.73%, transparent 72.73%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(27.27%,transparent), color-stop(27.27%,#ffffff), color-stop(36.36%,#ffffff), color-stop(36.36%,transparent), color-stop(63.63%,transparent), color-stop(63.63%,#ffffff), color-stop(72.73%,#ffffff), color-stop(72.73%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 36.36%,transparent 36.36%,transparent 63.63%,#ffffff 63.63%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 36.36%,transparent 36.36%,transparent 63.63%,#ffffff 63.63%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 36.36%,transparent 36.36%,transparent 63.63%,#ffffff 63.63%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 36.36%,transparent 36.36%,transparent 63.63%,#ffffff 63.63%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
 }
 .type2 .inv-el3 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 18.18%, #ffffff 18.18%, #ffffff 81.82%, #000000 81.82%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(18.18%,#000000), color-stop(18.18%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 18.18%, #ffffff 18.18%, #ffffff 81.82%, transparent 81.82%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(18.18%,transparent), color-stop(18.18%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 100%);
 }
 .type2 .inv-el4 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 9.09%, #ffffff 9.09%, #ffffff 27.27%, #000000 27.27%, #000000 36.36%, #ffffff 36.36%, #ffffff 63.63%, #000000 63.63%, #000000 72.73%, #ffffff 72.73%, #ffffff 90.9%, #000000 90.9%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(9.09%,#000000), color-stop(9.09%,#ffffff), color-stop(27.27%,#ffffff), color-stop(27.27%,#000000), color-stop(36.36%,#000000), color-stop(36.36%,#ffffff), color-stop(63.63%,#ffffff), color-stop(63.63%,#000000), color-stop(72.73%,#000000), color-stop(72.73%,#ffffff), color-stop(90.9%,#ffffff), color-stop(90.9%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 9.09%,#ffffff 9.09%,#ffffff 27.27%,#000000 27.27%,#000000 36.36%,#ffffff 36.36%,#ffffff 63.63%,#000000 63.63%,#000000 72.73%,#ffffff 72.73%,#ffffff 90.9%,#000000 90.9%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 9.09%,#ffffff 9.09%,#ffffff 27.27%,#000000 27.27%,#000000 36.36%,#ffffff 36.36%,#ffffff 63.63%,#000000 63.63%,#000000 72.73%,#ffffff 72.73%,#ffffff 90.9%,#000000 90.9%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 9.09%,#ffffff 9.09%,#ffffff 27.27%,#000000 27.27%,#000000 36.36%,#ffffff 36.36%,#ffffff 63.63%,#000000 63.63%,#000000 72.73%,#ffffff 72.73%,#ffffff 90.9%,#000000 90.9%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 9.09%,#ffffff 9.09%,#ffffff 27.27%,#000000 27.27%,#000000 36.36%,#ffffff 36.36%,#ffffff 63.63%,#000000 63.63%,#000000 72.73%,#ffffff 72.73%,#ffffff 90.9%,#000000 90.9%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 9.09%, #ffffff 9.09%, #ffffff 27.27%, transparent 27.27%, transparent 36.36%, #ffffff 36.36%, #ffffff 63.63%, transparent 63.63%, transparent 72.73%, #ffffff 72.73%, #ffffff 90.9%, transparent 90.9%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(9.09%,transparent), color-stop(9.09%,#ffffff), color-stop(27.27%,#ffffff), color-stop(27.27%,transparent), color-stop(36.36%,transparent), color-stop(36.36%,#ffffff), color-stop(63.63%,#ffffff), color-stop(63.63%,transparent), color-stop(72.73%,transparent), color-stop(72.73%,#ffffff), color-stop(90.9%,#ffffff), color-stop(90.9%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 9.09%,#ffffff 9.09%,#ffffff 27.27%,transparent 27.27%,transparent 36.36%,#ffffff 36.36%,#ffffff 63.63%,transparent 63.63%,transparent 72.73%,#ffffff 72.73%,#ffffff 90.9%,transparent 90.9%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 9.09%,#ffffff 9.09%,#ffffff 27.27%,transparent 27.27%,transparent 36.36%,#ffffff 36.36%,#ffffff 63.63%,transparent 63.63%,transparent 72.73%,#ffffff 72.73%,#ffffff 90.9%,transparent 90.9%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 9.09%,#ffffff 9.09%,#ffffff 27.27%,transparent 27.27%,transparent 36.36%,#ffffff 36.36%,#ffffff 63.63%,transparent 63.63%,transparent 72.73%,#ffffff 72.73%,#ffffff 90.9%,transparent 90.9%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 9.09%,#ffffff 9.09%,#ffffff 27.27%,transparent 27.27%,transparent 36.36%,#ffffff 36.36%,#ffffff 63.63%,transparent 63.63%,transparent 72.73%,#ffffff 72.73%,#ffffff 90.9%,transparent 90.9%,transparent 100%);
 }
 .type2 .inv-el5 {
 	background-color: #fff;
 }
 .type2 .inv-el6 {
-background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 9.09%, #000000 9.09%, #000000 18.18%, #ffffff 18.18%, #ffffff 81.82%, #000000 81.82%, #000000 90.9%, #ffffff 90.9%, #ffffff 100%);
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(9.09%,#ffffff), color-stop(9.09%,#000000), color-stop(18.18%,#000000), color-stop(18.18%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,#000000), color-stop(90.9%,#000000), color-stop(90.9%,#ffffff), color-stop(100%,#ffffff));
-background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
-background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
-background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
-background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
+background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 9.09%, transparent 9.09%, transparent 18.18%, #ffffff 18.18%, #ffffff 81.82%, transparent 81.82%, transparent 90.9%, #ffffff 90.9%, #ffffff 100%);
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(9.09%,#ffffff), color-stop(9.09%,transparent), color-stop(18.18%,transparent), color-stop(18.18%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,transparent), color-stop(90.9%,transparent), color-stop(90.9%,#ffffff), color-stop(100%,#ffffff));
+background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
+background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
+background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
+background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
 }
 .type2 .inv-el7 {
-	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 9.09%, #000000 9.09%, #000000 18.18%, #ffffff 18.18%, #ffffff 27.27%, #000000 27.27%, #000000 72.73%, #ffffff 72.73%, #ffffff 81.82%, #000000 81.82%, #000000 90.9%, #ffffff 90.9%, #ffffff 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(9.09%,#ffffff), color-stop(9.09%,#000000), color-stop(18.18%,#000000), color-stop(18.18%,#ffffff), color-stop(27.27%,#ffffff), color-stop(27.27%,#000000), color-stop(72.73%,#000000), color-stop(72.73%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,#000000), color-stop(90.9%,#000000), color-stop(90.9%,#ffffff), color-stop(100%,#ffffff));
-	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
-	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
-	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
-	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,#000000 9.09%,#000000 18.18%,#ffffff 18.18%,#ffffff 27.27%,#000000 27.27%,#000000 72.73%,#ffffff 72.73%,#ffffff 81.82%,#000000 81.82%,#000000 90.9%,#ffffff 90.9%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 9.09%, transparent 9.09%, transparent 18.18%, #ffffff 18.18%, #ffffff 27.27%, transparent 27.27%, transparent 72.73%, #ffffff 72.73%, #ffffff 81.82%, transparent 81.82%, transparent 90.9%, #ffffff 90.9%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(9.09%,#ffffff), color-stop(9.09%,transparent), color-stop(18.18%,transparent), color-stop(18.18%,#ffffff), color-stop(27.27%,#ffffff), color-stop(27.27%,transparent), color-stop(72.73%,transparent), color-stop(72.73%,#ffffff), color-stop(81.82%,#ffffff), color-stop(81.82%,transparent), color-stop(90.9%,transparent), color-stop(90.9%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 9.09%,transparent 9.09%,transparent 18.18%,#ffffff 18.18%,#ffffff 27.27%,transparent 27.27%,transparent 72.73%,#ffffff 72.73%,#ffffff 81.82%,transparent 81.82%,transparent 90.9%,#ffffff 90.9%,#ffffff 100%);
 }
 .type2 .inv-el8 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 27.27%, #ffffff 27.27%, #ffffff 45.45%, #000000 45.45%, #000000 54.54%, #ffffff 54.54%, #ffffff 72.73%, #000000 72.73%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(27.27%,#000000), color-stop(27.27%,#ffffff), color-stop(45.45%,#ffffff), color-stop(45.45%,#000000), color-stop(54.54%,#000000), color-stop(54.54%,#ffffff), color-stop(72.73%,#ffffff), color-stop(72.73%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 45.45%,#000000 45.45%,#000000 54.54%,#ffffff 54.54%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 45.45%,#000000 45.45%,#000000 54.54%,#ffffff 54.54%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 45.45%,#000000 45.45%,#000000 54.54%,#ffffff 54.54%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 27.27%,#ffffff 27.27%,#ffffff 45.45%,#000000 45.45%,#000000 54.54%,#ffffff 54.54%,#ffffff 72.73%,#000000 72.73%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 27.27%, #ffffff 27.27%, #ffffff 45.45%, transparent 45.45%, transparent 54.54%, #ffffff 54.54%, #ffffff 72.73%, transparent 72.73%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(27.27%,transparent), color-stop(27.27%,#ffffff), color-stop(45.45%,#ffffff), color-stop(45.45%,transparent), color-stop(54.54%,transparent), color-stop(54.54%,#ffffff), color-stop(72.73%,#ffffff), color-stop(72.73%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 45.45%,transparent 45.45%,transparent 54.54%,#ffffff 54.54%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 45.45%,transparent 45.45%,transparent 54.54%,#ffffff 54.54%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 45.45%,transparent 45.45%,transparent 54.54%,#ffffff 54.54%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 27.27%,#ffffff 27.27%,#ffffff 45.45%,transparent 45.45%,transparent 54.54%,#ffffff 54.54%,#ffffff 72.73%,transparent 72.73%,transparent 100%);
 }
 .type3 .inv-el1 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 33.32%, #ffffff 33.32%, #ffffff 66.68%, #000000 66.68%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(33.32%,#000000), color-stop(33.32%,#ffffff), color-stop(66.68%,#ffffff), color-stop(66.68%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 33.32%,#ffffff 33.32%,#ffffff 66.68%,#000000 66.68%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 33.32%,#ffffff 33.32%,#ffffff 66.68%,#000000 66.68%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 33.32%,#ffffff 33.32%,#ffffff 66.68%,#000000 66.68%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 33.32%,#ffffff 33.32%,#ffffff 66.68%,#000000 66.68%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 33.32%, #ffffff 33.32%, #ffffff 66.68%, transparent 66.68%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(33.32%,transparent), color-stop(33.32%,#ffffff), color-stop(66.68%,#ffffff), color-stop(66.68%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 33.32%,#ffffff 33.32%,#ffffff 66.68%,transparent 66.68%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 33.32%,#ffffff 33.32%,#ffffff 66.68%,transparent 66.68%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 33.32%,#ffffff 33.32%,#ffffff 66.68%,transparent 66.68%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 33.32%,#ffffff 33.32%,#ffffff 66.68%,transparent 66.68%,transparent 100%);
 }
 .type3 .inv-el2 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 8.33%, #ffffff 8.33%, #ffffff 91.67%, #000000 91.67%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(8.33%,#000000), color-stop(8.33%,#ffffff), color-stop(91.67%,#ffffff), color-stop(91.67%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 8.33%,#ffffff 8.33%,#ffffff 91.67%,#000000 91.67%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 8.33%,#ffffff 8.33%,#ffffff 91.67%,#000000 91.67%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 8.33%,#ffffff 8.33%,#ffffff 91.67%,#000000 91.67%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 8.33%,#ffffff 8.33%,#ffffff 91.67%,#000000 91.67%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 8.33%, #ffffff 8.33%, #ffffff 91.67%, transparent 91.67%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(8.33%,transparent), color-stop(8.33%,#ffffff), color-stop(91.67%,#ffffff), color-stop(91.67%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 8.33%,#ffffff 8.33%,#ffffff 91.67%,transparent 91.67%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 8.33%,#ffffff 8.33%,#ffffff 91.67%,transparent 91.67%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 8.33%,#ffffff 8.33%,#ffffff 91.67%,transparent 91.67%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 8.33%,#ffffff 8.33%,#ffffff 91.67%,transparent 91.67%,transparent 100%);
 }
 .type3 .inv-el3 {
 	background-color: #fff;
 }
 .type3 .inv-el4 {
-	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 24.99%, #000000 24.99%, #000000 41.63%, #ffffff 41.63%, #ffffff 58.33%, #000000 58.33%, #000000 74.95%, #ffffff 74.95%, #ffffff 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(24.99%,#ffffff), color-stop(24.99%,#000000), color-stop(41.63%,#000000), color-stop(41.63%,#ffffff), color-stop(58.33%,#ffffff), color-stop(58.33%,#000000), color-stop(74.95%,#000000), color-stop(74.95%,#ffffff), color-stop(100%,#ffffff));
-	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
-	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
-	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
-	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 24.99%,#000000 24.99%,#000000 41.63%,#ffffff 41.63%,#ffffff 58.33%,#000000 58.33%,#000000 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 24.99%, transparent 24.99%, transparent 41.63%, #ffffff 41.63%, #ffffff 58.33%, transparent 58.33%, transparent 74.95%, #ffffff 74.95%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(24.99%,#ffffff), color-stop(24.99%,transparent), color-stop(41.63%,transparent), color-stop(41.63%,#ffffff), color-stop(58.33%,#ffffff), color-stop(58.33%,transparent), color-stop(74.95%,transparent), color-stop(74.95%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,transparent 24.99%,transparent 41.63%,#ffffff 41.63%,#ffffff 58.33%,transparent 58.33%,transparent 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,transparent 24.99%,transparent 41.63%,#ffffff 41.63%,#ffffff 58.33%,transparent 58.33%,transparent 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 24.99%,transparent 24.99%,transparent 41.63%,#ffffff 41.63%,#ffffff 58.33%,transparent 58.33%,transparent 74.95%,#ffffff 74.95%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 24.99%,transparent 24.99%,transparent 41.63%,#ffffff 41.63%,#ffffff 58.33%,transparent 58.33%,transparent 74.95%,#ffffff 74.95%,#ffffff 100%);
 }
 .type3 .inv-el5 {
 	background-color: #fff;
 }
 .type3 .inv-el6 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 24.99%, #ffffff 24.99%, #ffffff 41.63%, #000000 41.63%, #000000 58.33%, #ffffff 58.33%, #ffffff 74.99%, #000000 74.99%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(24.99%,#000000), color-stop(24.99%,#ffffff), color-stop(41.63%,#ffffff), color-stop(41.63%,#000000), color-stop(58.33%,#000000), color-stop(58.33%,#ffffff), color-stop(74.99%,#ffffff), color-stop(74.99%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 24.99%,#ffffff 24.99%,#ffffff 41.63%,#000000 41.63%,#000000 58.33%,#ffffff 58.33%,#ffffff 74.99%,#000000 74.99%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 24.99%,#ffffff 24.99%,#ffffff 41.63%,#000000 41.63%,#000000 58.33%,#ffffff 58.33%,#ffffff 74.99%,#000000 74.99%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 24.99%,#ffffff 24.99%,#ffffff 41.63%,#000000 41.63%,#000000 58.33%,#ffffff 58.33%,#ffffff 74.99%,#000000 74.99%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 24.99%,#ffffff 24.99%,#ffffff 41.63%,#000000 41.63%,#000000 58.33%,#ffffff 58.33%,#ffffff 74.99%,#000000 74.99%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 24.99%, #ffffff 24.99%, #ffffff 41.63%, transparent 41.63%, transparent 58.33%, #ffffff 58.33%, #ffffff 74.99%, transparent 74.99%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(24.99%,transparent), color-stop(24.99%,#ffffff), color-stop(41.63%,#ffffff), color-stop(41.63%,transparent), color-stop(58.33%,transparent), color-stop(58.33%,#ffffff), color-stop(74.99%,#ffffff), color-stop(74.99%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 24.99%,#ffffff 24.99%,#ffffff 41.63%,transparent 41.63%,transparent 58.33%,#ffffff 58.33%,#ffffff 74.99%,transparent 74.99%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 24.99%,#ffffff 24.99%,#ffffff 41.63%,transparent 41.63%,transparent 58.33%,#ffffff 58.33%,#ffffff 74.99%,transparent 74.99%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 24.99%,#ffffff 24.99%,#ffffff 41.63%,transparent 41.63%,transparent 58.33%,#ffffff 58.33%,#ffffff 74.99%,transparent 74.99%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 24.99%,#ffffff 24.99%,#ffffff 41.63%,transparent 41.63%,transparent 58.33%,#ffffff 58.33%,#ffffff 74.99%,transparent 74.99%,transparent 100%);
 }
 .type3 .inv-el7 {
-	background-image: -moz-linear-gradient(left,  #000000 0%, #000000 16.66%, #ffffff 16.66%, #ffffff 33.32%, #000000 33.32%, #000000 41.65%, #ffffff 41.65%, #ffffff 58.35%, #000000 58.35%, #000000 66.68%, #ffffff 66.68%, #ffffff 83.34%, #000000 83.34%, #000000 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(16.66%,#000000), color-stop(16.66%,#ffffff), color-stop(33.32%,#ffffff), color-stop(33.32%,#000000), color-stop(41.65%,#000000), color-stop(41.65%,#ffffff), color-stop(58.35%,#ffffff), color-stop(58.35%,#000000), color-stop(66.68%,#000000), color-stop(66.68%,#ffffff), color-stop(83.34%,#ffffff), color-stop(83.34%,#000000), color-stop(100%,#000000));
-	background-image: -webkit-linear-gradient(left,  #000000 0%,#000000 16.66%,#ffffff 16.66%,#ffffff 33.32%,#000000 33.32%,#000000 41.65%,#ffffff 41.65%,#ffffff 58.35%,#000000 58.35%,#000000 66.68%,#ffffff 66.68%,#ffffff 83.34%,#000000 83.34%,#000000 100%);
-	background-image: -o-linear-gradient(left,  #000000 0%,#000000 16.66%,#ffffff 16.66%,#ffffff 33.32%,#000000 33.32%,#000000 41.65%,#ffffff 41.65%,#ffffff 58.35%,#000000 58.35%,#000000 66.68%,#ffffff 66.68%,#ffffff 83.34%,#000000 83.34%,#000000 100%);
-	background-image: -ms-linear-gradient(left,  #000000 0%,#000000 16.66%,#ffffff 16.66%,#ffffff 33.32%,#000000 33.32%,#000000 41.65%,#ffffff 41.65%,#ffffff 58.35%,#000000 58.35%,#000000 66.68%,#ffffff 66.68%,#ffffff 83.34%,#000000 83.34%,#000000 100%);
-	background-image: linear-gradient(to right,  #000000 0%,#000000 16.66%,#ffffff 16.66%,#ffffff 33.32%,#000000 33.32%,#000000 41.65%,#ffffff 41.65%,#ffffff 58.35%,#000000 58.35%,#000000 66.68%,#ffffff 66.68%,#ffffff 83.34%,#000000 83.34%,#000000 100%);
+	background-image: -moz-linear-gradient(left,  transparent 0%, transparent 16.66%, #ffffff 16.66%, #ffffff 33.32%, transparent 33.32%, transparent 41.65%, #ffffff 41.65%, #ffffff 58.35%, transparent 58.35%, transparent 66.68%, #ffffff 66.68%, #ffffff 83.34%, transparent 83.34%, transparent 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(16.66%,transparent), color-stop(16.66%,#ffffff), color-stop(33.32%,#ffffff), color-stop(33.32%,transparent), color-stop(41.65%,transparent), color-stop(41.65%,#ffffff), color-stop(58.35%,#ffffff), color-stop(58.35%,transparent), color-stop(66.68%,transparent), color-stop(66.68%,#ffffff), color-stop(83.34%,#ffffff), color-stop(83.34%,transparent), color-stop(100%,transparent));
+	background-image: -webkit-linear-gradient(left,  transparent 0%,transparent 16.66%,#ffffff 16.66%,#ffffff 33.32%,transparent 33.32%,transparent 41.65%,#ffffff 41.65%,#ffffff 58.35%,transparent 58.35%,transparent 66.68%,#ffffff 66.68%,#ffffff 83.34%,transparent 83.34%,transparent 100%);
+	background-image: -o-linear-gradient(left,  transparent 0%,transparent 16.66%,#ffffff 16.66%,#ffffff 33.32%,transparent 33.32%,transparent 41.65%,#ffffff 41.65%,#ffffff 58.35%,transparent 58.35%,transparent 66.68%,#ffffff 66.68%,#ffffff 83.34%,transparent 83.34%,transparent 100%);
+	background-image: -ms-linear-gradient(left,  transparent 0%,transparent 16.66%,#ffffff 16.66%,#ffffff 33.32%,transparent 33.32%,transparent 41.65%,#ffffff 41.65%,#ffffff 58.35%,transparent 58.35%,transparent 66.68%,#ffffff 66.68%,#ffffff 83.34%,transparent 83.34%,transparent 100%);
+	background-image: linear-gradient(to right,  transparent 0%,transparent 16.66%,#ffffff 16.66%,#ffffff 33.32%,transparent 33.32%,transparent 41.65%,#ffffff 41.65%,#ffffff 58.35%,transparent 58.35%,transparent 66.68%,#ffffff 66.68%,#ffffff 83.34%,transparent 83.34%,transparent 100%);
 }
 .type3 .inv-el8 {
-	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 16.66%, #000000 16.66%, #000000 83.34%, #ffffff 83.34%, #ffffff 100%);
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(16.66%,#ffffff), color-stop(16.66%,#000000), color-stop(83.34%,#000000), color-stop(83.34%,#ffffff), color-stop(100%,#ffffff));
-	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
-	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
-	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
-	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 16.66%,#000000 16.66%,#000000 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 16.66%, transparent 16.66%, transparent 83.34%, #ffffff 83.34%, #ffffff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(16.66%,#ffffff), color-stop(16.66%,transparent), color-stop(83.34%,transparent), color-stop(83.34%,#ffffff), color-stop(100%,#ffffff));
+	background-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,transparent 16.66%,transparent 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,transparent 16.66%,transparent 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 16.66%,transparent 16.66%,transparent 83.34%,#ffffff 83.34%,#ffffff 100%);
+	background-image: linear-gradient(to right,  #ffffff 0%,#ffffff 16.66%,transparent 16.66%,transparent 83.34%,#ffffff 83.34%,#ffffff 100%);
 }
 
 
